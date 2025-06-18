@@ -27,8 +27,8 @@ function generateCacheKey(
     /\/$/,
     ''
   );
-
-  return `${requestPath}?${querySuffix}&${headersSuffix}`;
+  console.log(`🔑 ${requestPath}?${querySuffix.trim()}&${headersSuffix.trim()}`);
+  return `${requestPath}?${querySuffix.trim()}&${headersSuffix.trim()}`;
 }
 
 module.exports = { generateCacheKey };
